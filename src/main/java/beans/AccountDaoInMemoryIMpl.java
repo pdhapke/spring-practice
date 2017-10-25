@@ -18,6 +18,11 @@ public class AccountDaoInMemoryImpl implements AccountDao{
 			accountsMap.put(account2.getId(), account2); 
 	}
 	
+	public void setAccountsMap(Map<Long, Account> map){
+		this.accountsMap = map; 
+		
+	}
+	
 	public void insert(Account account) {
 		// TODO Auto-generated method stub
 		accountsMap.put(account.getId(), account);
